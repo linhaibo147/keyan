@@ -1,0 +1,29 @@
+.LoginPage{
+  background:#0894ec;
+  background: -webkit-linear-gradient(#0894ec, #00dbff); 
+  background: -o-linear-gradient(#0894ec, #00dbff);
+  background: -moz-linear-gradient(#0894ec, #00dbff); 
+  background: linear-gradient(#0894ec, #00dbff); 
+}
+
+
+.login-title{padding:1rem 0;font-size: 1.25rem;color: #fff;text-align:center;text-shadow: 0 0 0.5rem #00c5ff;margin-top: 3rem;}
+.loginBox{margin: 1.75rem 0.75rem;}
+.loginBox ul{background: none;border: none;}
+.loginBox li{margin-bottom: 1rem;border-bottom: 1px solid rgba(255,255,255,0.5); color: #fff;}
+.loginBox li input[type="text"],.list-block input[type="password"]{color: #fff;height: 2rem;}
+.loginBox input::-webkit-input-placeholder {color:rgba(255,255,255,.5);}
+.loginBox .p-btn{margin-top: 50px;}
+.loginBox .button.login-btn{
+	border:none;
+	color: #0894ec;
+	background:#fff;  	
+	/*background: -webkit-linear-gradient(left, #0894ec , #00dbff);
+	background: -o-linear-gradient(right, #0894ec, #00dbff); 
+	background: -moz-linear-gradient(right, #0894ec, #00dbff); 
+	background: linear-gradient(to right, #0894ec , #00dbff);*/
+}
+.loginBox .button.reset-btn{border: 1px solid rgba(255,255,255,0.5);color: #fff;}
+
+/****页脚****/
+.LoginPage .footer{color: rgba(255,255,255,.6)}

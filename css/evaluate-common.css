@@ -1,0 +1,70 @@
+/*清除浮动代码*/ 
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0} 
+.clearfloat{zoom:1} 
+.evaluate-content .list-block{margin: 0;}
+
+
+.bar .bar-plus{font-size: .85rem;}
+.evaluate-content{background: #fff;}
+.evaluate-content .content-block{margin-top: 0.5rem;}
+.evaluate-content .content-block-title{margin: 0;font-size: 16px;margin-bottom: 0.5rem;}
+.evaluate-content .total{margin:10px 0;}
+/***评价首页***/
+.evaluate-index .item-after{font-size:0.5rem;}
+
+/****评价表格****/
+.evaluate-content .table{font-size: 14px;}
+.table th,.table td{padding:0.5rem;text-align: left;border:1px solid #ccc;}
+.table{width: 100%;table-layout: fixed;}
+.evaluate-content .Textarea textarea{width: 100%;height:6rem;border:1px solid #ccc}
+.evaluate-content .col_1{width: 60%;}
+.evaluate-content .col_2{width: 20%;}
+.evaluate-content .col_3{width: 20%;text-align: center;}
+.table input{width: 100%;}
+/***评价详情页***/
+.evaluate-datails{background: #fff;}
+.evaluate-datails .content-block-title.Tit{color: #F00B0D;}
+.evaluate-datails .content-block{margin: 0;padding: 0.75rem;background: #fff;}
+
+.evaluate-datails .grade-ul li{margin-bottom: 0.5rem;}
+.evaluate-datails .grade-ul .text{margin-bottom: 0.5rem;color: #F00B0D;}
+.evaluate-datails .grade-ul span{float: left;text-align: right;}
+.evaluate-datails .content-block-title{margin-top: 0;margin-left: 0;margin-bottom: 1rem;font-size: 16px;}
+
+.evaluate-datails  .input_grade{margin-left: 0.5rem;width: 3rem;}
+.evaluate-datails .list-block{margin: 0;background: #fff;}
+.evaluate-datails .searchbar{padding: 8px;}
+.evaluate-datails .puls-select{    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;width: 100%;height: 100%;border:1px solid #0894ec;background:#fff url(../images/select.png) no-repeat 98% 30%;background-size:16px;}
+
+.evaluate-select{background: #4a4a54;}
+.evaluate-select .evaluate-ul{margin-left: 0;}
+.evaluate-ul a{display: block;width: 4rem;height: 4rem;}
+.evaluate-ul .circle{width: 100%;height: 100%;line-height: 4.5rem;text-align: center;border-radius: 50%;color: #fff;}
+.evaluate-ul .text{margin-top: 0.5rem;color: #fff;font-size: 14px;text-align: center;}
+.evaluate-ul li{margin-bottom: 3rem;}
+.evaluate-ul li:nth-child(1) .circle{background: #eb331a;}
+.evaluate-ul li:nth-child(2) .circle{background: #ee3f8c;}
+.evaluate-ul li:nth-child(3) .circle{background: #20617f;}
+.evaluate-ul li:nth-child(4) .circle{background: #d4b300;}
+.evaluate-ul li:nth-child(5) .circle{background: #67bd61;}
+.evaluate-ul li:nth-child(6) .circle{background: #56ced0;}
+.evaluate-ul li:nth-child(7) .circle{background: #9b56d0;}
+/****评价新增老师弹窗****/
+.evaluate-plus .list-block{margin: 0;background: #fff;}
+.evaluate-plus .searchbar{padding: 8px;}
+.evaluate-plus .puls-select{;width: 100%;height: 100%;border:1px solid #0894ec;background:#fff url(../images/select.png) no-repeat 98% 30%;background-size:16px;}
+.evaluate-plus .list-block .item-inner{background-image: none;}
+.popup .evaluate-bar{position: relative;}
+.popup .list-block{margin: 0;}
+
+
+/*****评价老师列表****/
+.evaluate-name{margin-top: 0;}
+.evaluate-name .item-date{position: absolute;top: 50%;right: 1.6rem;margin-top: -16px;font-size:22px ;font-weight: bold;;color: #F00B0D;}
+
+
+/****新增评价的弹出窗***/
+

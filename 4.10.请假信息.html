@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+		<link rel="stylesheet" href="css/light7.css">
+		<link rel="stylesheet" href="css/light7-swiper.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/LCalendar.min.css" />
+		<!--文件上传-->
+		<link href="css/jquery-filestyle.min.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+		<!-- 你的html代码 -->
+		<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/common.js" charset="utf-8"></script>
+		<script type="text/javascript" src="js/light7.min.js" charset="utf-8"></script>
+		<!--日期控件-->
+		<script type="text/javascript" src="js/LCalendar.js"></script>
+		<script type="text/javascript" src="js/personal-common.js"></script>
+
+		<!-- page 容器 -->
+		<div class="page">
+			<!-- 标题栏 -->
+			<header class="bar bar-nav">
+				<a class="icon icon-left pull-left" href="4.3.实习生请假列表.html"></a>
+				
+				<h1 class="title">请假信息管理</h1>
+			</header>
+			<!-- 这里是页面内容区 -->
+			<div class="content">
+				<div class="content-block marginblock">
+						<div class="row">
+							<div class="col-33">
+								<a href="#" class="button button-fill button-submit">初审通过</a>
+							</div>
+							<div class="col-33">
+								<a href="#" class="button button-fill button-submit">退回修改</a>
+							</div>
+							<div class="col-33">
+								<a href="4.3.实习生请假列表.html" class="button button-fill button-submit">返回</a>
+							</div>
+						</div>		
+				</div>
+				<div class="list-block marginblock">
+					<ul>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">教研室</div>
+									<div class="item-input">
+										<select class="select">
+											<option value="">儿内科教研室</option>
+											<option value="">耳鼻喉科教研室</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">科室</div>
+									<div class="item-input">
+										<select class="select">
+											<option value="">儿内科教研室</option>
+											<option value="">耳鼻喉科教研室</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">开始时间</div>
+									<div class="item-input">
+										<input type="text" placeholder="请选择" id="stardatetime-picker" value="" readonly>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">结束时间</div>
+									<div class="item-input">
+										<input type="text" placeholder="请选择" id="enddatetime-picker" value="" readonly>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">请假天数</div>
+									<div class="item-input">
+										<input type="text" placeholder="" value="" disabled>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">请假类型</div>
+									<div class="item-input">
+										<select class="select">
+											<option value="" class="t">请选择</option>
+											<option value="237">休假</option>
+											<option value="242">事假</option>
+											<option value="243">病假</option>
+											<option value="244">产假</option>
+											<option value="245">考试假</option>
+											<option value="246">就业试工假</option>
+											<option value="1124">半天假</option>
+										</select>
+									</div>
+								</div>
+							</div>
+						</li>
+						<!-- Date -->
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">请假日期</div>
+									<div class="item-input">
+										<input type="text" class="input_date" id="applyDate" readonly name="input_date" value="2018-01-15 " data-lcalendar="2000-01-01,2018-01-29" />
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">请假单位</div>
+									<div class="item-input">
+										<input type="text" placeholder="" value="">
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="align-top">
+							<div class="item-content">
+								<div class="item-inner">
+									<div class="item-title label">请假事由</div>
+									<div class="item-input">
+										<textarea placeholder=""></textarea>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="align-top">
+							<div class="item-content">
+
+								<div class="item-inner">
+									<div class="item-title label">详细去向地址</div>
+									<div class="item-input">
+										<textarea></textarea>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="align-top">
+							<div class="item-content">
+
+								<div class="item-inner">
+									<div class="item-title label">其他联系人和联系方式</div>
+									<div class="item-input">
+										<textarea></textarea>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li class="align-top">
+							<div class="item-content item-link">
+								<div class="item-inner">
+									<div class="item-title label">附件</div>
+									<div class="item-input pr">
+										<a class="jfilestyle" href="我是文件"></a>
+										<div class="tips red">请假超过三天请提交证明附件！</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+
+			</div>
+		</div>
+		<script>
+			//附件隐藏点击的事件
+
+	$(function() {
+				supplementTime("applyDate");
+			})
+		</script>
+		<script>
+			$("#stardatetime-picker").datetimePicker({
+				toolbarTemplate: '<header class="bar bar-nav bar-nav-wihte">\
+    <button class="button button-link pull-right close-picker ">确定</button>\
+    <h1 class="title">选择开始时间</h1>\
+    </header>'
+			});
+			$("#enddatetime-picker").datetimePicker({
+				toolbarTemplate: '<header class="bar bar-nav bar-nav-wihte">\
+    <button class="button button-link pull-right close-picker">确定</button>\
+    <h1 class="title">选择结束时间</h1>\
+    </header>'
+			});
+		</script>
+		<!--文件上传-->
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/jquery-filestyle.min.js" charset="utf-8"></script>
+	</body>
+
+</html>

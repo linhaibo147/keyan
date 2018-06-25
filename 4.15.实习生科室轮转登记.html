@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/light7.css">
+		<link rel="stylesheet" href="css/light7-swiper.css">
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/evaluate-common.css" />
+	</head>
+
+	<body>
+		<!-- 你的html代码 -->
+		<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+		<script src="js/common.js"></script>
+		<script type="text/javascript" src="js/light7.min.js" charset="utf-8"></script>
+
+		<!-- page 容器 -->
+		<div class="page">
+			<!-- 标题栏 -->
+			<header class="bar bar-nav">
+				<h1 class="title">XX生科室轮转管理</h1>
+			</header>
+
+			  <!-- 工具栏 -->
+  <nav class="bar bar-tab">
+    <a class="tab-item active" href="1.个人中心.html">
+     <span class="tab-label">个人</span>
+     <span class="icon"><i class="fa fa-user-o fa-comment-o"></i></span> 
+     <span class="badge">22</span>
+    </a>
+    <a class="tab-item" href="2.快捷.html">
+       <span class="tab-label">快捷</span>
+      <span class="icon"><i class="fa fa-stethoscope"></i></span>
+       <span class="badge">2</span>
+    </a>
+     <a class="tab-item" href="3.接收进修生管理.html">
+     	<span class="tab-label">进修生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+    <a class="tab-item" href="4.实习生管理.html">
+    	<span class="tab-label">实习生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+     <a class="tab-item" href="5.研究生管理.html">
+     	<span class="tab-label">研究生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+  </nav>
+
+				
+			<!-- 这里是页面内容区 -->
+			<div class="content infinite-scroll" data-distance="100">
+
+				<div class="cards-list train-list">
+					<ul class="list-container">
+						<li class="card">
+							
+								<div class="card-header"><span>耳鼻喉科教研室</span><span class="teacher">李好老师</span></div>
+								<div class="card-content">
+									<div class="card-content-inner">
+										<div><span>轮转专科:</span>儿童耳鼻喉病房</div>
+										<div><span>院区:</span>珠海儿童区</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<span>预计开始:2018-12-10</span>
+									<span>预计结束:2018-9-10</span>
+								</div>
+								<div class="card-footer">
+									<span>实际进科:2018-5-10</span>
+									<span>实际出科:2018-6-10</span>
+								</div>
+								<div class="card-footer">
+									<span class="">科室状态:已出科</span>
+									<span class="color-success">审核状态:通过</span>
+								</div>
+								<div class="card-footer">
+									<a href="4.6.编辑.html" class="button button-primary">编辑</a>
+									<a href="4.14.学习纪录.html" class="button button-primary">学习纪录</a>
+									<a href="" class="button button-primary">审核</a>
+								</div>	
+							
+						</li>
+					</ul>
+				</div>
+				<!-- preloader -->
+				<div class="infinite-scroll-preloader">
+					<div class="preloader"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		//无限滚动
+		var loading = false;
+		var maxItems = 100;
+		var itemsPerLoad = 10;
+
+		function addItems(number, lastIndex) {
+			var html = '';
+			for(var i = lastIndex + 1; i <= lastIndex + number; i++) {
+				html += '';
+}
+			$('.list-container').append(html);
+
+		}
+		addItems(itemsPerLoad, 0);
+
+		var lastIndex = 20;
+
+		$(document).on('infinite', '.infinite-scroll', function() {
+			// 如果正在加载，则退出
+			if(loading) return;
+
+			// 设置flag
+			loading = true;
+
+			setTimeout(function() {
+				loading = false;
+
+				if(lastIndex >= maxItems) {
+					$.detachInfiniteScroll($('.infinite-scroll'));
+					$('.infinite-scroll-preloader').remove();
+					return;
+				}
+
+				addItems(itemsPerLoad, lastIndex);
+				lastIndex = $('.list-container li').length;
+			}, 1000);
+		});
+	</script>
+
+</html>

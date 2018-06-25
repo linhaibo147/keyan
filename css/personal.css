@@ -1,0 +1,59 @@
+
+/***大框架共同***/
+.list-block .item-link .item-inner{
+	background-image: url(../images/i-f7.png);
+    background-repeat: no-repeat;
+    background-position: 97% center;
+    background-position: -webkit-calc(100% - .5rem) center;
+    background-position: calc(100% - .5rem) center;
+    background-size: .7rem
+}
+
+/**共同**/
+.common-save-fill .go-back{position: relative;margin-top: 0.2rem;display: block;float: left;z-index: 2;}
+.common-save-fill .save{position: relative;float: right;line-height: 2.2rem;z-index: 2;}
+
+
+/****个人信息****/
+.list-personal a{color: #3d4145;}
+.list-personal a:first-child i{color:#f90;}
+.list-personal a:nth-child(2) i{color:#0894ec;}
+.list-personal a:nth-child(3) i{color:#08967D;}
+.list-personal a:nth-child(4) i{color:#f00b0d;}
+.list-personal a:nth-child(5) i{color:#4F5CA7;}
+.list-personal {margin:0;}
+/****头像****/
+.personImg{padding: 1rem 0 0;text-align: center;border-bottom: #e7e7e7;}
+.personImg .per-img{display: inline-block;height:96px;width:96px;border-radius: 50%;overflow: hidden;}
+.per-img img{width: 100%;height: 100%;}
+
+
+
+/****个人信息的详细页***/
+.person-information .list-block{margin: 0.75rem 0;}
+.person-information .item-input{text-align: right;color: #999;direction: rtl;}
+.person-information .item-input label{padding-left:1rem; display: inline-block;}
+.person-information .item-input input,.person-information .item-input select{text-align: right;direction: rtl;}
+.person-information .content-block-title{margin-top: 0;}
+.plus-practice {margin:20px;}
+.person-information .list-block ul{margin-bottom: 10px;}
+/****上传页面样式****/
+.person-portrait .imgBox{text-align: center;height: 12rem;}
+.person-portrait .imgBox img{display: inline-block;max-height: 100%;max-width: 100%;}
+.person-portrait .upBox{position: relative;}
+.person-portrait .input_file{position: absolute;top: 0;opacity: 0;width: 100%;height: 100%;}
+.person-portrait .btnBox>div{margin:1rem 0;}
+
+/****身份证等上传列表****/
+.fileBox .list-block .tit{font-size:0.8rem;padding:.5rem .75rem;}
+.fileBox .list-block{margin: 0;}
+.fileBox .list-block ul{border-top: none;}
+.fileBox .file-list ul{background: no-repeat;}
+.fileBox .card-footer,.fileBox .card-content-inner{padding: 0.25rem 0.75rem;}
+.fileBox .card-content-inner{border-bottom: 1px solid #e1e1e1;}
+.file-list .input-file{position: relative;}
+.file-list input[type="file"]{position:absolute;left: 0;top: 0;width: 100%;height:100%;opacity: 0;}
+/***修该密码***/
+.cot .list-block{margin: 0;}
+
+

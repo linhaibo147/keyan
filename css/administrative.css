@@ -1,0 +1,32 @@
+
+
+.administrative{margin-top: 0;padding:0.75rem;background: #fff;}
+
+/***教学列表表格***/
+.administrative .table{width: 100%;table-layout: fixed;}
+.administrative .table th,.administrative .table td{padding: 5px;border:1px solid #d7d7d7;;text-align:center;overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}
+.administrative .table .col_1{width: 40%;}
+.administrative .table .col_2{width: 40%;}
+.administrative .table .col_3{width: 20%;}
+.administrative .button-primary{background: #0894ec;color: #fff;}
+
+
+/****弹出窗****/
+.layer{display: none;position: fixed;left: 50%;top: 50%;padding: 1rem;max-width: 100%;background:#fff;z-index: 11112;}
+.layer .close{position: relative;text-align: right;color: #fff;}
+.layer .close i{display: inline-block;color: #000;}
+.layer ul li{margin-bottom: 10px;}
+
+.overlay{
+     background: #000;
+    filter: alpha(opacity=50);
+    opacity: 0.5; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    z-index: 11111;
+    display: block;
+}

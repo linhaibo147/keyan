@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="css/light7.css">
+    <link rel="stylesheet" href="css/light7-swiper.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/common.css" />
+  </head>
+  <body>
+    <!-- 你的html代码 -->
+    <script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/common.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/light7.min.js" charset="utf-8"></script>   
+
+    <!-- page 容器 -->
+<div class="page">
+  <!-- 标题栏 -->
+ 		<header class="bar bar-nav common-save-fill">
+		<a class="icon icon-left pull-left" href="4.4.进修生销假列表.html"></a>
+    <h1 class="title">XX生销假列表</h1>
+    <button id="batch" class="button button-link button-nav pull-right">删除</button>
+  </header>
+
+  <!-- 工具栏 -->
+  <nav class="bar bar-tab">
+    <a class="tab-item active" href="1.个人中心.html">
+     <span class="tab-label">个人</span>
+     <span class="icon"><i class="fa fa-user-o fa-comment-o"></i></span> 
+     <span class="badge">22</span>
+    </a>
+    <a class="tab-item" href="2.快捷.html">
+       <span class="tab-label">快捷</span>
+      <span class="icon"><i class="fa fa-stethoscope"></i></span>
+       <span class="badge">2</span>
+    </a>
+     <a class="tab-item" href="3.接收进修生管理.html">
+     	<span class="tab-label">进修生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+    <a class="tab-item" href="4.实习生管理.html">
+    	<span class="tab-label">实习生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+     <a class="tab-item" href="5.研究生管理.html">
+     	<span class="tab-label">研究生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+  </nav>
+
+  <!-- 这里是页面内容区 -->
+  <div class="content infinite-scroll infinite-scroll-bottom" >
+
+      <div class="tabs">
+      <!--销假-->
+		  <div id="" class="">
+		  	 <!--检索-->
+		  	 <div class="content-padded">
+				 <div class="searchbar row">
+				 	<div class="search-input col-25">
+					  <select class="select" id="SearchType2" name="SearchType"><option value="">请选择</option>
+							<option value="AttenTypeName">类型</option>
+							<option value="BeginTime">开始</option>
+							<option value="EndTime">结束</option>
+							<option value="LeaveCount">天数</option>
+							<option value="ActualBeginTime">实际开始</option>
+							<option value="ActualEndTime">实际结束</option>
+							<option value="ActualLeaveCount">实请</option>
+							<option value="ReviewType">状态</option>
+						</select>
+					</div>
+					<div class="search-input col-60">
+					  <input type="search" id="search2" placeholder="输入关键字..."/>
+					</div>
+					<a class="button button-fill button-primary col-15"><span class="icon icon-search"></span></a>
+				  </div>
+			  </div>
+		  <!--检索 end-->
+			  <div class="list-block media-list attendance-list">
+			  <div class="cards-list train-list">
+					<ul class="list-container">
+						<li class="card">
+								<div class="card-header"><span>胸卡号:JY16263</span><span class="color-danger">高研</span></div>
+								<div class="card-content">
+									<div class="card-content-inner">
+										<div><span>单位名称:</span>单位名称</div>
+										<div><span>教研室</span>儿内科教研室</div>
+										<div><span>科室:</span>（儿童）儿童保健门诊</div>
+										<div><span>请假类型:</span>病假</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<span>开始时间:2018-12-10</span>
+									<span>结束日期:2018-9-10</span>
+								</div>
+								<div class="card-footer">
+									<div>请假天数:2天</div>
+								</div>
+								
+								<div class="card-footer">
+									<span>实际开始时间:2018-12-10</span>
+									<span>实际结束日期:2018-9-10</span>
+								</div>
+								<div class="card-footer">
+									<div>实际请假天数:2天</div>
+								</div>
+								<div class="card-footer">
+									<div>审核状态:<span class="color-danger">未通过</span></div>
+								</div>
+								<div class="card-footer">
+									<a href="4.10.请假信息.html" class="button">编辑</a>
+									<a class="button disabled">审核</a>
+								</div>
+						</li>					</ul>
+			  								<li class="card">
+								<div class="card-header"><span>胸卡号:JY16263</span><span class="color-danger">高研</span></div>
+								<div class="card-content">
+									<div class="card-content-inner">
+										<div><span>单位名称:</span>单位名称</div>
+										<div><span>教研室</span>儿内科教研室</div>
+										<div><span>科室:</span>（儿童）儿童保健门诊</div>
+										<div><span>请假类型:</span>病假</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<span>开始时间:2018-12-10</span>
+									<span>结束日期:2018-9-10</span>
+								</div>
+								<div class="card-footer">
+									<div>请假天数:2天</div>
+								</div>
+								
+								<div class="card-footer">
+									<span>实际开始时间:2018-12-10</span>
+									<span>实际结束日期:2018-9-10</span>
+								</div>
+								<div class="card-footer">
+									<div>实际请假天数:2天</div>
+								</div>
+								<div class="card-footer">
+									<div>审核状态:<span class="color-danger">未通过</span></div>
+								</div>
+								<div class="card-footer">
+									<a href="4.10.请假信息.html" class="button">编辑</a>
+									<a href="4.12.审核销假信息.html" class="button">审核</a>
+								</div>
+						</li>					</ul>
+
+			  </div>  
+		  </div>
+     
+      </div>
+ 	<!-- 加载提示符 -->
+	  <div class="infinite-scroll-preloader">
+		  <div class="preloader"></div>
+	  </div>
+   
+    </div>
+  </div>
+  </body>
+   <script>
+			  		$(function(){
+			  			$('#batch').on('click',function(){
+			  				alert('请选择');
+			  				console.log($('.train-list .card-header span:nth-child(1)'))
+			  				$('.train-list .card-header span:nth-child(1)').before('<input type="checkbox" name="card-checkbox" />');
+			  				//设立下标位,当他再次点击判断check是否有选择一个以上，然后执行下一步操作
+			  			})
+			  		})
+			  	</script>
+</html>

@@ -1,0 +1,27 @@
+.bg-white{ background: #fff;}
+.bar a{color: #e8f6ff;}
+.search-input .fa {
+    position: absolute;
+    top: 50%;
+    left: .3rem;
+    font-size: .9rem;
+    color: #b4b4b4;
+    -webkit-transform: translate3D(0, -50%, 0);
+    -ms-transform: translate3D(0, -50%, 0);
+    -o-transform: translate3D(0, -50%, 0);
+    transform: translate3D(0, -50%, 0);
+}
+.card{margin: 0.5rem 0;border-radius: 0;}
+.card a .card-header{color:#333;}
+.card a:hover .card-header{color:#0894ec;}
+.msg-list{margin: .5rem 0;}
+.msg-list li{border-bottom: 1px solid #e7e7e7;}
+.msg-list li:last-child{border-bottom: 0;}
+.msg-list .item-inner{border-bottom: 0;}
+.msg-list .item-date{color:#999;font-size: 0.725rem;}
+.msg-list .item-text{color: #999;}
+.contet-detailed{ line-height: 1.8;}
+.con-title{margin:0.5rem 0;}
+.con-sub-title{ font-weight: 400; color: #999;margin:0.2rem 0;}
+/****页脚*****/
+.footer{position: fixed;bottom: 0;box-sizing: border-box;width: 100%;padding: 10px;font-size: 12px;text-align: center;}

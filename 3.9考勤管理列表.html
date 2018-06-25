@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+		<link rel="shortcut icon" href="/favicon.ico">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<link rel="stylesheet" href="css/light7.css">
+		<link rel="stylesheet" href="css/light7-swiper.css">
+		<link rel="stylesheet" href="css/common.css" />
+		<link rel="stylesheet" href="css/evaluate-common.css" />
+	</head>
+
+	<body>
+		<!-- 你的html代码 -->
+		<script type="text/javascript" src="js/jquery.min.js" charset="utf-8"></script>
+		<script src="js/common.js"></script>
+		<script type="text/javascript" src="js/light7.min.js" charset="utf-8"></script>
+		  	<script>	
+		  	//打开弹窗
+		  	function openPopup(value){
+		 		$.popup('#'+value);
+		 	}
+		 	//关闭弹窗
+		  function closePopup(value){
+		  	$.closeModal('#'+value)
+		  	}
+  	</script>
+		<!-- page 容器 -->
+		<div class="page">
+			<!-- 标题栏 -->
+			<header class="bar bar-nav common-save-fill">
+				<a class="icon icon-left pull-left" href="3.接收进修生管理.html"></a>
+				<h1 class="title">XX生考勤管理</h1>
+			</header>
+
+		  <!-- 工具栏 -->
+		  <nav class="bar bar-tab">
+    <a class="tab-item active" href="1.个人中心.html">
+     <span class="tab-label">个人</span>
+     <span class="icon"><i class="fa fa-user-o fa-comment-o"></i></span> 
+     <span class="badge">22</span>
+    </a>
+    <a class="tab-item" href="2.快捷.html">
+       <span class="tab-label">快捷</span>
+      <span class="icon"><i class="fa fa-stethoscope"></i></span>
+       <span class="badge">2</span>
+    </a>
+     <a class="tab-item" href="3.接收进修生管理.html">
+     	<span class="tab-label">进修生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+    <a class="tab-item" href="4.实习生管理.html">
+    	<span class="tab-label">实习生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+     <a class="tab-item" href="5.研究生管理.html">
+     	<span class="tab-label">研究生</span>
+      <span class="icon"><i class="fa fa-user-md"></i></span>
+    </a>
+  </nav>
+			<!-- 这里是页面内容区 -->
+			<div class="content infinite-scroll" data-distance="100">
+			  <div class="buttons-tab">
+			    <a href="" class="tab-link active button">待入科</a>
+			    <a href="" class="tab-link button">轮转中</a>
+			  </div>
+			<!--检索-->
+		  	 <div class="content-padded">
+				 <div class="searchbar row">
+				 	<div class="search-input col-25">
+					  <select class="select" id="SearchType2" name="SearchType"><option value="">请选择</option>
+							<option value="AttenTypeName">类型</option>
+						</select>
+					</div>
+					<div class="search-input col-60">
+					  <input type="search bg-white" id="search2" placeholder="输入关键字..."/>
+					</div>
+					<a class="button button-fill button-primary col-15"><span class="icon icon-search"></span></a>				
+				  </div>
+			  </div>
+
+		  	<!--检索 end-->
+				<div class="cards-list train-list">
+					<ul class="list-container">
+						<li class="card">
+								<div class="card-header"><span>学生姓名:高研</span></div>
+								<div class="card-content">
+									<div class="card-content-inner">
+										
+										<div><span>科室:</span>产前诊断（生化免疫）</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<span>日期:2018-12-10</span>
+								</div>
+								
+								<div class="card-footer">
+									<span class="">出勤状态:白班</span>
+								</div>
+								<div class="card-footer">
+									<a href="" class="button">删除</a>
+									<a href="javascript:openPopup('popup-modification')" class="button">修改</a>
+								</div>
+						</li>
+						<li class="card">
+								<div class="card-header"><span>学生姓名:高研</span></div>
+								<div class="card-content">
+									<div class="card-content-inner">
+										
+										<div><span>科室:</span>产前诊断（生化免疫）</div>
+									</div>
+								</div>
+								<div class="card-footer">
+									<span>日期:2018-12-10</span>
+								</div>
+								
+								<div class="card-footer">
+									<span class="">出勤状态:白班</span>
+								</div>
+								<div class="card-footer">
+									<a href="" class="button">删除</a>
+									<a href="" class="button">修改</a>
+								</div>
+						</li>
+
+					</ul>
+				</div>
+				<!-- preloader -->
+				<div class="infinite-scroll-preloader">
+					<div class="preloader"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<!--修改弹出层-->
+  <div class="popup" id="popup-modification">
+  	<div class="bar bar-nav pr">
+	<a href="javascript: closePopup('popup-modification')" class="close-modification pull-right"><i class="fa fa-close fa-2x"></i></a>
+			</div>
+  	<div class="list-block">
+  		<ul>
+  		<li>
+		    	<div class="item-content">
+				<div class="item-inner">
+					<div class="item-title label">来院日期</div>
+					<div class="item-input">
+						<input type="text" id="dateTime2" name="input_date" placeholder="请输入日期" data-lcalendar="2000-01-01,2018-01-29" />
+					</div>
+				</div>
+				</div>
+				</li>
+  		</ul>
+  	</div>
+  </div>
+	<script>
+		//无限滚动
+		var loading = false;
+		var maxItems = 100;
+		var itemsPerLoad = 20;
+
+		function addItems(number, lastIndex) {
+			var html = '';
+			for(var i = lastIndex + 1; i <= lastIndex + number; i++) {
+				html += '';
+}
+			$('.list-container').append(html);
+
+		}
+		addItems(itemsPerLoad, 0);
+
+		var lastIndex = 20;
+
+		$(document).on('infinite', '.infinite-scroll', function() {
+			// 如果正在加载，则退出
+			if(loading) return;
+
+			// 设置flag
+			loading = true;
+
+			setTimeout(function() {
+				loading = false;
+
+				if(lastIndex >= maxItems) {
+					$.detachInfiniteScroll($('.infinite-scroll'));
+					$('.infinite-scroll-preloader').remove();
+					return;
+				}
+
+				addItems(itemsPerLoad, lastIndex);
+				lastIndex = $('.list-container li').length;
+			}, 1000);
+		});
+	</script>
+
+</html>

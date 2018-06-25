@@ -1,0 +1,6 @@
+.message-list{margin:0.75rem 0;}
+.message-list .data-time{color: #999;}
+
+
+/****首页消息弹窗***/
+.popup-about1{height: auto;padding: 10px;top: 50%;left: 0.5rem;right:0.5rem;width: auto;}
